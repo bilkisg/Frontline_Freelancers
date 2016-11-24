@@ -1,51 +1,70 @@
 <!DOCTYPE html>
 <html>
 	<head>
-  		<title>#Frontline_Freelancers</title>
-  		<link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
-  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  		<link href="stylesheets/main.css" rel="stylesheet">
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  		<script src="js/main.js"></script>
-  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>#Frontline_Freelancers</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
 	<body>
 		<nav class="navbar navbar-inverse navbar-fixed-top">
-      		<div class="container">
-        		<div class="navbar-header">
-          			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            		<span class="sr-only">Toggle navigation</span>
-            		<span class="icon-bar"></span>
-            		<span class="icon-bar"></span>
-            		<span class="icon-bar"></span>
-            		<span class="icon-bar"></span>
-          			</button>
-          			<a class="navbar-brand" href="#">#FrontLine_Freelancers</a>
-          			
-       			</div>
-        		<div id="navbar" class="collapse navbar-collapse">
-          			<ul class="nav navbar-nav">
-            			<!--<li class="active"><a href="#">Home</a></li>-->
-            			<li><a href="#about">About</a></li>
-            			<li><a href="#contact">Contact</a></li>
-            			<li><a href="#contact">Blog</a></li>
-            			<li><a href="#testimonials">Testimonials</a></li>	
-          			</ul>
-          			<ul class="nav navbar-nav navbar-right">
-      					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    				</ul>
-        		</div><!--/.nav-collapse -->
-      		</div>
-    	</nav>
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">#FrontLine_Freelancers</a>		
+       	</div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <!--<li class="active"><a href="#">Home</a></li>-->
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>	
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+      			<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      			<li><a href="#" data-toggle="modal" data-target="#login-modal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    			</ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-		<!--<div class="jumbotron">
-			<div class="container">
-  				<h1 class="display-3">#Frontline_Freelancers</h1>
-  			</div>
-		</div>-->
+    <!-- Modal -->
+    <div class="modal fade" id="login-modal" role="dialog">
+      <div class="modal-dialog modal-sm">
+    
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Login in to your account</h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="text" name="user" placeholder=" -- Enter Username -- ">
+              </div>
+              <div class="form-group">
+                <input type="password" name="pass" placeholder=" -- Enter Password -- ">
+              </div>
+              <!--div class="form-group">
+                <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+              </div-->
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default myLoginButton">Login</button>
+            <!--button type="button" class="btn btn-default" data-dismiss="modal">Close</button-->
+          </div>
+        </div> 
+      </div>
+    </div>
+
 
 		<br><br>
 		<div class="container-fluid">
@@ -61,27 +80,30 @@
     			<!-- Wrapper for slides -->
     			<div class="carousel-inner" role="listbox">
       				<div class="item active">
-        				<img src="images/greetingHands.jpeg" alt="slide1">
+        				<img src="images/handsColor.jpeg" alt="slide1">
         				<div class="carousel-caption">
-          					<h3>#Frontline_Freelancers</h3>
-          					<p>Helping to hear unheard voices</p>
+          				<h1>#Frontline_Freelancers</h1>
+          				<p>&quot Helping support and change lives,
+                    join our community of Freelancers and Clients,
+                    and see what you can change. &quot </p>
         				</div>
       				</div>
 
       				
       				<div class="item">
-        				<img src="images/groupYoungRefugees.jpg" alt="slide2">
+        				<img src="images/standingPeople.jpeg" alt="slide2">
         				<div class="carousel-caption">
-          					<h3>#Frontline_Freelancers</h3>
-          					<p>Helping support and change lives</p>
+          					<h1>#Frontline_Freelancers</h1>
+          					<p>Helping to hear unheard voices<br>
+                    Hear their stories</p>
         				</div>
       				</div>
 
       				<div class="item">
-        				<img src="images/hands.jpeg" alt="slide3">
+        				<img src="images/family.jpeg" alt="slide3">
         				<div class="carousel-caption">
-          					<h3>#Frontline_Freelancers</h3>
-          					<p>Giving hope, giving a voice</p>
+          					<h1>#Frontline_Freelancers</h1>
+          					<p>Giving hope, support us, support them</p>
         				</div>
       				</div>
     			</div>
@@ -97,72 +119,101 @@
     			</a>
   			</div>
 		</div>
-
 		<br>
 		<div class='container-fluid'>
 			<ul class="nav nav-tabs">
-   				<li class="active"><a data-toggle="tab" href="#findOpportunities">Find Opportunities</a></li>
-    			<li><a  data-toggle="tab" href="#findFreelancers">Find Freelancers</a></li>
- 			 </ul>
-	
-
-			<div class="tab-content">
-    			<div id="findOpportunities" class="tab-pane fade in active">
-      				<h3>Some opportunities</h3>
-      				<p>some text some text</p>
-    			</div>
-    			<div id="findFreelancers" class="tab-pane fade">
-      				<h3>Find Freelancers</h3>
-      				<p>some text some text<br>
-      				some text<br>
-      				some text</p>
-    			</div>
-  			</div>
-  		</div>
-  	
-  		<br>
-  		<div id="threeInfp" class='text-center'>
-  			<div class='container'>
-    			<div class='row'>
-    				<div class='col-sm-4'>
-      					<img src='images/person.jpg' class='img-circle center-block'>
-      					<br>
-      					<p>Welcome OnBoard, more about us</p>
-      				
-    				</div>
-    				<div class='col-sm-4'>
-      					<img src='images/person.jpg' class='img-circle center-block'>
-      					<br>
-      					<p>View all opportunites</p>
-      				
-    				</div>
-    				<div class='col-sm-4'>
-      					<img src='images/person.jpg' class='img-circle center-block'>
-      					<br>
-      					<p>view all freelancers</p>
-     				
-     				</div>
-    			</div> 
-  			</div>
-  		</div>
-
-  		<br><hr>
-		<div id="socialButtons" class='text-center'>
-  			<div class='container'>
-    			<div id='social-buttons'>
-      				<button class='btn-twitter btn-sm'>Twitter</button>
-      				<button class='btn-facebook btn-sm'>Facebook</button>
-      				<button class='btn-pinterest btn-sm'>Pinterest</button>
-      				<button class='btn-instagram btn-sm'>Instagram</button>
-
+   			<li class="active"><a class="tabHeaders" data-toggle="tab" href="#findOpportunities">Find Opportunities</a></li>
+    		<li><a class="tabHeaders" data-toggle="tab" href="#findFreelancers">Find Freelancers</a></li>
+ 			</ul>
+		  <div class="tab-content">
+    	 <div id="findOpportunities" class="tab-pane fade in active">
+    	   <div class="container">
+    			 <div class="row">
+    				<div class="col-sm-3">
+              <p class="showForm1"><a href="#anchor" id="mylink">Search for a Freelance opportunity that suits your skills</a></p>
+              <form class="searchForm1">
+                <div class="form-group">
+                  <input type="text" class="form-control" data-toggle="tooltip" title="E.g. Journalist, Teacher, Blogger" placeholder=" -- Enter Profession --">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" data-toggle="tooltip" title="E.g. Syria, Iraq, Afghanistan" placeholder=" -- Enter Location --">
+                </div>
+                <button type="submit" class="btn btn-primrary mySubmitButton">Search</button>
+              </form>
       			</div>
+      			<div class="col-sm-1">
+    					<h1 class="orText">OR</h1>				
+      			</div>
+      			<div class="col-sm-3">
+      				<p><a href="#anchor" id="mylink">Register and create a Freelancer profile and let the Client community find you</a></p>
+      			</div>
+      			<div class="col-sm-1">
+    					<h1 class="orText">OR</h1>
+      			</div>
+      			<div class="col-sm-3">
+      				<p><a href="#anchor" id="mylink">View all opportunities in our database</a></p>
+      			</div>
+    			</div>
     		</div>
-  		</div>
+    	</div>
 
+    	<div id="findFreelancers" class="tab-pane fade">
+    		<div class="container">
+    			<div class="row">
+    				<div class='col-sm-3'>
+    					<p class="showForm2"><a href="#anchor" id="mylink">Search for skilled Freelancers ready to work on your projects</a></p>
+              <form class="searchForm2">
+                <div class="form-group">
+                  <!--<label for="skill">Skill:</label>-->
+                  <input type="text" class="form-control" data-toggle="tooltip" title="E.g. Journalist, Teacher, Blogger" placeholder="-- Enter Profession --">
+                </div>
+                <div class="form-group">
+                  <!--<label for="location">Location:</label>-->
+                  <input type="text" class="form-control" data-toggle="tooltip" title="E.g. Syria, Iraq, Afghanistan" placeholder="-- Enter Location --">
+                </div>
+                <button type="submit" class="btn btn-primrary mySubmitButton">Search</button>
+              </form>
+      			</div>
+      			<div class="col-sm-1">
+    					<h1 class="orText">OR</h1>
+      			</div>
+      			<div class="col-sm-3">
+      				<p><a href="#anchor" id="mylink">Upload an opportunity and let Freelancers contact you</a></p>
+      			</div>
+      			<div class="col-sm-1">
+    					<h1 class="orText">OR</h1>
+      			</div>
+      			<div class="col-sm-3">
+      				<p><a href="#anchor" id="mylink">View all Freelancers in our database</a></p>
+      			</div>
+    			</div>
+    		</div>
+    	</div>
+  	</div>
+  </div>
+  	
+  <br>
+  	
+	 <footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="social text-right">
+					<a href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="https://twitter.com/"><i class="fa fa-twitter fa-2x"></i></a>
+					<a href="https://uk.pinterest.com/"><i class="fa fa-pinterest fa-2x"></i></a>
+					<a href="https://www.instagram.com/"><i class="fa fa-instagram fa-2x"></i></a>
+				</div>
+			</div>
+		</div>
+	 </footer>
 
-
-
-
+		<!-- Placed at the end of the document so the pages load faster -->
+		<link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+  	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+  	<link href="stylesheets/main.css" rel="stylesheet">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 	</body>
-
 </html>
