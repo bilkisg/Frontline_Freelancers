@@ -1,42 +1,25 @@
-body{
-
-	
-
-}
-
 .carousel-inner > .item > img,
  	.carousel-inner > .item > a > img { 		
     	min-width: 100%;
      	margin: auto;
      	height: 400px;
-  }
+}
 
  .carousel-inner{
-
  	cursor: pointer;
-
-
- }
+}
 
 .carousel-caption {
-     /* max-width: 550px;
-      padding: 0 20px;
-      margin:0 auto;
-      margin-top: 0px;*/
-      
-      margin-bottom: 200px;
-      text-align:left;
-      color: black;
- }
+	margin-bottom: 200px;
+    text-align:left;
+    color: black;
+}
 
 .carousel-caption > p {
-
 	font-size: 22px;
-
 }
 
 .searchForm1, .searchForm2 {
-
 	display: none;
 }
 
@@ -60,7 +43,6 @@ body{
 .nav-tabs {
     margin-bottom: -1px;
     font-weight: bold;
-
 }
 
 .nav-tabs > li > a {
@@ -90,19 +72,25 @@ footer {
 }
 
 .social i:hover {
-    color: #FFF;
+	color: #FFF;
     text-decoration: none;
 }
 
 a {
-
 	font-size: 20px;
-
 }
 
 .orText {
 	font-weight: bold;
 	text-align: center;
+}
+
+#contact {
+    position:absolute; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    top: 0px; 
 }
 
 
